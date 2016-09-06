@@ -1,0 +1,32 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<!-- Import element -->
+<link rel="import" href="../bower_components/google-map/google-map.html">
+<link rel="import" href="../bower_components/google-map/google-map-directions.html">
+
+<dom-module id="my-new-map">
+  <!-- Defines the element's style and local DOM -->
+  <template>
+    <style>
+      :host {
+        display: block;
+
+        padding: 16px;
+      }
+	google-map {
+    	height: 600px;
+  	}
+    </style>
+
+    <h1>New map</h1>
+	<!-- Use element -->
+	<google-map map="{{map}}" api-key="AIzaSyB3HkkFEnd3kqXp-aw_OyZktX0DQuMg9L0" draggable="false" disable-default-ui zoom="15"></google-map>
+	<google-map-directions  api-key="AIzaSyB3HkkFEnd3kqXp-aw_OyZktX0DQuMg9L0" map="[[map]]" start-address="San Francisco" end-address="Mountain View"></google-map-directions>
+  </template>
+  <!-- Creates the element's prototype and registers it -->
+  <script>
+    Polymer({
+      is: 'my-new-map'
+    });
+  </script>
+</dom-module>
