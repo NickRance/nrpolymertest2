@@ -1,3 +1,9 @@
+Nick's Notes
+
+The Github pages site will deploy from the Docs folder, this docs folder contains the contents of the bundled polymer
+build which I manually copied to the Docs directory
+
+
 # Polymer App Toolbox - Starter Kit
 
 [![Build Status](https://travis-ci.org/PolymerElements/polymer-starter-kit.svg?branch=master)](https://travis-ci.org/PolymerElements/polymer-starter-kit)
